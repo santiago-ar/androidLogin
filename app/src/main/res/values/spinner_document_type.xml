@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="document_types">
+        <item>Tipo de documento</item>
         <item>Cédula de ciudadanía</item>
         <item>NIT</item>
         <item>Cédula de extrangería</item>
