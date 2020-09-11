@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#F6F6F6"
+    android:paddingLeft="@dimen/padding_dashboard"
+    android:paddingRight="@dimen/padding_dashboard"
     >
 
     <ImageView
@@ -15,14 +17,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@android:dimen/app_icon_size"
         android:text="¡Hola Juan!"
+        android:layout_marginTop="30dp"
         android:textAlignment="viewStart" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@android:dimen/app_icon_size"
         android:text="Confirma tus datos para continuar"
         android:textAlignment="viewStart" />
 
@@ -30,9 +31,44 @@
         android:id="@+id/document_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@android:dimen/app_icon_size"
-        />
+        android:layout_marginTop="30dp" />
 
+    <EditText
+        android:id="@+id/document_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button1"
+        android:text="Continuar" />
+
+    <Button
+        android:id="@+id/touch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button2"
+        android:drawableLeft="@drawable/finger"
+        android:layout_marginTop="10dp"
+        android:text="Ingresa con huella" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="5dp"
+        android:text="@string/im_not"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        />
 
 
 </LinearLayout>
