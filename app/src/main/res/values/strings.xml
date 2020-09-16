@@ -6,4 +6,5 @@
     <string name="clave_personal"><b> Clave Personal</b></string>
     <string name="no_recuerdo_mi_clave"><u>No recuerdo mi clave</u></string>
     <string name="continue_btn">Continuar</string>
+    <string name="name">¡Hola Juan!</string>
 </resources>

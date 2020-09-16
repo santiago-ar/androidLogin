@@ -14,11 +14,14 @@
         android:src="@drawable/logo" />
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="¡Hola Juan!"
-        android:textAlignment="viewStart" />
+        android:text="@string/name"
+        android:textAlignment="viewStart"
+        android:textColor="#000"
+        />
 
     <TextView
         android:layout_width="match_parent"
@@ -27,7 +30,7 @@
         android:textAlignment="viewStart" />
 
     <Spinner
-        android:id="@+id/document_type"
+        android:id="@+id/sp_document_type"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
