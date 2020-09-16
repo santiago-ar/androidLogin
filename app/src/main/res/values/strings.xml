@@ -3,4 +3,7 @@
     <string name="derecha">Derecha</string>
     <string name="izquierda">Izquierda</string>
     <string name="im_not"><u>No soy Juan</u></string>
+    <string name="clave_personal"><b> Clave Personal</b></string>
+    <string name="no_recuerdo_mi_clave"><u>No recuerdo mi clave</u></string>
+    <string name="continue_btn">Continuar</string>
 </resources>
