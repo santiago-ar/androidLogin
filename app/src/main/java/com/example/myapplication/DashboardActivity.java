@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,21 +30,25 @@ public class DashboardActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         dashboardName.setText(intent.getStringExtra("name"));
+        final String[] arrayDepartments;
+        arrayDepartments = getResources().getStringArray(R.array.departments);
 
-        final ArrayList<String> arrayList = new ArrayList<>();
-        for(int i=0 ;i<10;i++){
-            arrayList.add(""+i+1);
-        }
-
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, arrayList);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, arrayDepartments);
         listDashboard.setAdapter(arrayAdapter);
         listDashboard.setOnItemClickListener(new AdapterView.OnItemClickListener() {
              @Override
-             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                 Toast.makeText(DashboardActivity.this,"Pulsaste:"+arrayList.get(i),Toast.LENGTH_SHORT).show();
-             }
+                 public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                 Intent intent = new Intent(getApplicationContext(), CitiesActivity.class);
+                 switch (i) {
+                          case 0:
+                             intent.putExtra("Cities",arrayDepartments);
+                             startActivity(intent);
+                              case 2:
 
-        }
+                     }
+                 }
+
+             }
         );
 
 
